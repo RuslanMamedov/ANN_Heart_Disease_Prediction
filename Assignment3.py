@@ -86,6 +86,13 @@ print ('Variance: ',variance)
 
 # Tuning the ANN with grid search
 from sklearn.model_selection import GridSearchCV
+def build_classifier():
+    classifier = Sequential()
+    classifier.add(Dense(output_dim = 7, init = 'uniform', activation = 'softmax', input_dim = 13))
+    classifier.add(Dense(output_dim = 7, init = 'uniform', activation = 'relu'))
+    classifier.add(Dense(output_dim = 5, init = 'uniform', activation = 'sigmoid')) 
+    classifier.compile(optimizer = optimizer, loss = 'sparse_categorical_crossentropy', metrics=['accuracy'])
+    return classifier
 classifier = KerasClassifier(build_fn = build_classifier)
 parameters = {'batch_size' : [10, 20, 30],
               'epochs' : [50, 100, 200],
