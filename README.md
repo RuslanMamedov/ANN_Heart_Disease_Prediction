@@ -1,2 +1,2 @@
 # ANN_Heart_Disease_Prediction
-ANN to predict heart disease
+ANN multiclass classifier to predict the heart disease
