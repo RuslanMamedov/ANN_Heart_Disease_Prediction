@@ -52,7 +52,7 @@ classifier.add(Dense(output_dim = 7, init = 'uniform', activation = 'relu'))
 classifier.add(Dense(output_dim = 7, init = 'uniform', activation = 'relu'))
 
 # Adding the output layer
-classifier.add(Dense(output_dim = 1, init = 'uniform', activation = 'sigmoid')) 
+classifier.add(Dense(output_dim = 5, init = 'uniform', activation = 'sigmoid')) 
 
 # Compiling the ANN
 classifier.compile(optimizer = 'adam', loss = 'sparse_categorical_crossentropy', metrics=['accuracy'])
