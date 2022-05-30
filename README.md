@@ -1,4 +1,4 @@
-# Heart Disease Prediction using Neural Networks
+# Heart Disease Prediction using Neural Networks (ANN)
 Original data: https://archive.ics.uci.edu/ml/datasets/Heart+Disease  
 
 Data Set Information:
